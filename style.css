@@ -60,7 +60,6 @@ main>div{
 }
 
 .card{
-    
     display: flex;
     flex-flow: column nowrap;
     width: 200px;
@@ -116,10 +115,6 @@ main>div{
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.btn-modal:hover{
-    background-color: "yellow";
-}
-
 #modal .modal-window {
     width: 200px;
     height: 300px;
@@ -135,9 +130,6 @@ main>div{
 
 #modal > div > div.title {
     padding: 20px;
-    /* display: inline; */
-    /* text-shadow: 1px 1px 2px gray; */
-    
 }
 
 #modal .title h2 {
@@ -146,17 +138,15 @@ main>div{
     padding: 10px;
 }
 #modal .close-area {
-    display: inline;
+    display: absolute;
     float: right;
     padding-right: 10px;
     cursor: pointer;
-    /* text-shadow: 1px 1px 2px gray; */
     color: rgb(0, 0, 0);
 }
 #modal .content {
     margin-top: 20px;
     padding: 0px 10px;
-    /* text-shadow: 1px 1px 2px gray; */
     color: rgb(0, 0, 0);
 }
 
@@ -172,7 +162,7 @@ form > li{
 
 form > input {
     width: 100%;
-    background-color: rgb(255, 166, 0);
-    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
 }

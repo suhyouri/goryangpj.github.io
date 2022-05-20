@@ -7,12 +7,13 @@ const newCard = document.getElementById("#form");
 const form = document.querySelector("form");
 const section = document.querySelector("section")
 
+const sidebar = document.querySelector(".sidebar");
+
 form.addEventListener("submit", handleFormSubmit);
 
 let newCont = {};
 
 function makeCont(cont) {
-  // console.log(`new Cont : ${newCont.name}`);
   const newDiv = document.createElement("div");
   const img = document.createElement("img");
   img.src = cont.url;
@@ -30,14 +31,15 @@ function makeCont(cont) {
   newDiv.appendChild(span);
   newDiv.classList.add("card");
   section.append(newDiv);
+  sidebar.append(span);
   modal.style.display = "none";
 }
 
-function saveCont(newContObj) {
-  localStorage.setItem(`name`, JSON.stringify(newCont.name));
-  localStorage.setItem(`url`, JSON.stringify(newCont.url));
-  localStorage.setItem(`intro`, JSON.stringify(newCont.intro));
-}
+// function saveCont(newContObj) {
+//   localStorage.setItem(`name`, JSON.stringify(newCont.name));
+//   localStorage.setItem(`url`, JSON.stringify(newCont.url));
+//   localStorage.setItem(`intro`, JSON.stringify(newCont.intro));
+// }
 
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -51,7 +53,7 @@ function handleFormSubmit(e) {
   };
   newCont =newContObj;
   makeCont(newContObj);
-  saveCont(newContObj);
+  // saveCont(newContObj);
 }
 
 btnModal.addEventListener("click", (e) => {
