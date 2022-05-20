@@ -1,5 +1,3 @@
-'use strict'
-
 const modal = document.getElementById("modal");
 const btnModal = document.getElementById("btn-modal");
 const closeBtn = modal.querySelector(".close-area");
