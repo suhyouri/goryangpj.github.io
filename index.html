@@ -15,6 +15,7 @@
     </header>
     <main>
         <div class="sidebar">
+            <button id="btn-modal">추가</button>
             <span>소주</span>
             <span>맥주</span>
             <span>샴페인</span>
@@ -23,27 +24,50 @@
         </div>
         <section class="container">
             <div class="card">
-                <img src="http://source.unsplash.com/random/220x110" />
+                <img src="http://source.unsplash.com/random/220x110" alt="소주"/>
                 <span>저는 소주를 안 좋아해요!</span>
             </div>
             <div class="card">
-                <img src="http://source.unsplash.com/random/220x100" />
+                <img src="http://source.unsplash.com/random/220x100" alt="맥주"/>
                 <span>애플퐉스같은 맛있는 맥주가 좋아요.</span>
             </div>
             <div class="card">
-                <img src="http://source.unsplash.com/random/220x95" />
+                <img src="http://source.unsplash.com/random/220x95" alt="샴페인"/>
                 <span>샴페인 좋아요~ 샴페인 좋아요~</span>
             </div>
             <div class="card">
-                <img src="http://source.unsplash.com/random/220x98" />
+                <img src="http://source.unsplash.com/random/220x98" alt="와인"/>
                 <span>와인의 매력을 아직 깨닫지 못했어요.</span>
             </div>
             <div class="card">
-                <img src="http://source.unsplash.com/random/220x109" />
+                <img src="http://source.unsplash.com/random/220x109" alt="위스키"/>
                 <span>먹어본 적이 없을 무!</span>
             </div>
 
         </section>
     </main>
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
+                <h2>모달</h2>
+            </div>
+            <div class="close-area">X</div>
+            <!-- <div id="modal-new"> -->
+                <form class="content" id="form">
+                    <li>이름</li>
+                    <input id="name" class="name" placeholder="화이트와인" type="text" required>
+                    <li>이미지</li>
+                    <input id="url" class="url" placeholder="URL" required>
+                    <li>내용</li>
+                    <input id="intro" class="intro" placeholder="주로 청포도로 만든다네요" required>
+                    <br>
+                    <br>
+                    <button>save</button>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="/server.js" defer></script>
 </body>
+
 </html>
