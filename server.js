@@ -53,6 +53,9 @@ function handleFormSubmit(e) {
   };
   newCont =newContObj;
   makeCont(newContObj);
+  e.target[0].value="";
+  e.target[1].value="";
+  e.target[2].value="";
   // saveCont(newContObj);
 }
 

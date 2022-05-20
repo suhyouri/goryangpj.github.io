@@ -48,6 +48,23 @@ main>div{
     width: 120px;
 }
 
+.sidebar >button{
+    /* padding:10px; */
+    font-family: '87MMILSANG-Regular';
+    background-color: white;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.847);
+    border-radius: 3px;
+}
+.sidebar > button:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+    outline:none;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.847); 
+    color:white;
+}
+
 .container{
     display: flex;
     flex-flow: row wrap;
@@ -73,13 +90,10 @@ main>div{
 }
 
 .card img{
-    /* position: absolute; */
-    overflow: hidden;
+  overflow: hidden;
   width: 100%;
-  /* height: auto; */
   object-fit: contain;
   margin-bottom: 10px;
-  /* padding-top: 50% */
 }
 
 .card > span{
@@ -165,4 +179,26 @@ form > input {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
+}
+
+form > input:focus {
+    border: 1px solid rgba(175, 19, 232, 0.847);
+    outline:rgba(0, 17, 255, 0.37);
+}
+
+form > button {
+    /* padding:10px; */
+    font-family: '87MMILSANG-Regular';
+    background-color: white;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.847);
+    border-radius: 3px;
+}
+form > button:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+    outline:none;
+    transition: 0.5s;
+    border-radius: 6px;
+    color:white;
 }
